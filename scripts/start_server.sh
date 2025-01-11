@@ -1,1 +1,1 @@
-python ./helloworld.py
+python ../helloworld.py
