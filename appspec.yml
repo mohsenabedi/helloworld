@@ -9,3 +9,7 @@ hooks:
     - location: scripts/start_flask.sh
       runas: ec2-user
       timeout: 15
+  ApplicationStart:
+    - location: scripts/validate_service.sh
+      timeout: 15
+      runas: ec2-user
