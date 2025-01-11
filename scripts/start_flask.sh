@@ -6,6 +6,6 @@ pkill -f "python3 /home/ec2-user/helloworld/helloworld.py"
 
 echo "Flask application killed."
 
-sudo python3 helloworld.py 
+sudo nohup python3 helloworld.py &
 
 echo "Flask application started."
