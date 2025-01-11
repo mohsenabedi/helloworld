@@ -3,3 +3,9 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/helloworld
+
+hooks:
+  AfterInstall:
+    - location: scripts/start_flask.sh
+      runas: ec2-user
+      timeout: 300
