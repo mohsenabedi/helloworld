@@ -8,4 +8,4 @@ hooks:
   AfterInstall:
     - location: scripts/start_flask.sh
       runas: ec2-user
-      timeout: 300
+      timeout: 15
