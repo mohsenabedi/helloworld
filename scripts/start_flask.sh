@@ -27,7 +27,7 @@ echo "Flask application killed."
 
 # Start the Flask application in the background
 echo "Starting Flask application..."
-sudo nohup python3 helloworld.py > flask.log 2>&1 &
+sudo nohup python3 helloworld.py &
 
 # Verify if the Flask app started
 if [ $? -eq 0 ]; then
