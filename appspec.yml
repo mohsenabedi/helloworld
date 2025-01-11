@@ -7,9 +7,9 @@ files:
 hooks:
   AfterInstall:
     - location: scripts/start_flask.sh
-      runas: ec2-user
+      runas: root
       timeout: 20
   ApplicationStart:
     - location: scripts/validate_service.sh
       timeout: 20
-      runas: ec2-user
+      runas: root
